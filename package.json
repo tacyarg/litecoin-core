@@ -2,6 +2,16 @@
   "name": "litecoin-core",
   "version": "1.0.0",
   "description": "simple litecoin rpc client",
+  "keywords": [
+    "litecoin",
+    "litecoind",
+    "client",
+    "request",
+    "promise",
+    "fetch",
+    "rest",
+    "rpc"
+  ],
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
