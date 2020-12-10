@@ -17,6 +17,17 @@
   "dependencies": {
     "node-fetch": "^2.6.1"
   },
-  "repository": "git@github.com:tacyarg/litecoin-core.git",
-  "author": "tacyarg <jdent@tacyarg.com>"
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/tacyarg/litecoin-core.git"
+  },
+  "author": "tacyarg <jdent@tacyarg.com>",
+  "bugs": {
+    "url": "https://github.com/tacyarg/litecoin-core/issues"
+  },
+  "homepage": "https://github.com/tacyarg/litecoin-core#readme",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
 }
