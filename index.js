@@ -141,8 +141,16 @@ const AVAILABLE_METHODS = [
   "getZmqNotifications"
 ];
 
+const networks = {
+  mainnet: 9332,
+  regtest: 19332,
+  testnet: 19332
+};
+
 module.exports = config => {
-  const { host, port, username, password } = config;
+  let { host, port, username, password, network = "mainnet" } = config;
+  //set default port
+  port = config.port || networks[network];
 
   const BASE_URL = `http://${host}:${port}`;
   const auth = new Buffer.from(username + ":" + password).toString("base64");
