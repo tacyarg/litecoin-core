@@ -149,7 +149,7 @@ const networks = {
 };
 
 module.exports = config => {
-  let { host, port, username, password, network = "mainnet" } = config;
+  let { host, port, username, password, network = "mainnet", apiKey } = config;
   //set default port
   port = config.port || networks[network];
 
@@ -164,7 +164,7 @@ module.exports = config => {
         "Content-Type": "application/json",
         Authorization: `Basic ${auth}`
       },
-      body: JSON.stringify({ method, params })
+      body: JSON.stringify({ method, params, "API_key": apiKey })
     })
       .then(res => res.json())
       .then(({ error, result }) => {
