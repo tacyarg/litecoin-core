@@ -16,6 +16,7 @@ const AVAILABLE_METHODS = [
   "getMemPoolDescendants",
   "getmemPoolEntry",
   "getMemPoolInfo",
+  "sendFrom",
   "getRawMemPool",
   "getTxOut",
   "getTxOutProof",
